@@ -8,6 +8,12 @@ const email: string = "hierno.mah@gmail.com";
 // const phone: string = "+1(917) 370-9485";
 const picture: string | undefined = "/ThiernoBah.jpg?height=150&width=150";
 const resume_link = "https://docs.google.com/document/d/1b8D4KnOnR7wgz8sIx69_k5mPHTj1dJ3ENcXemysFctk/edit?usp=sharing";
+const aboutMeParagraph = `Hey there! I'm a passionate full-stack developer with two years of experience building web applications. I specialize 
+                            in JavaScript, React, Node.js, and Java, crafting efficient, scalable, and user-friendly solutions. Beyond web development, 
+                            I'm diving into the world of Artificial Intelligence—learning the fundamentals now but aiming to train my own Large Language 
+                            Model in the future.
+
+                            I love solving complex problems and turning ideas into reality through code. Always curious, always learning!`;
 
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
     <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
@@ -95,18 +101,7 @@ const Home = () => {
                 <div className="container mx-auto px-4">
                     <h2 className="text-3xl font-bold mb-8 text-center text-gray-700">About Me</h2>
                     <div className="max-w-3xl mx-auto text-center">
-                        <p className="text-gray-600 mb-4">
-                            {/* I'm a passionate full-stack developer with two years of experience building web applications. I specialize in 
-                            JavaScript, React, Node.js, and Java, focusing on creating efficient, scalable, and user-friendly solutions to 
-                            complex problems. I'm also deeply interested in Artificial Intelligence and its applications. Currently, I'm 
-                            learning the fundamentals, with plans to train my own Large Language Model in the future. */}
-                            Hey there! I'm a passionate full-stack developer with two years of experience building web applications. I specialize 
-                            in JavaScript, React, Node.js, and Java, crafting efficient, scalable, and user-friendly solutions. Beyond web development, 
-                            I'm diving into the world of Artificial Intelligence—learning the fundamentals now but aiming to train my own Large Language 
-                            Model in the future.
-
-                            I love solving complex problems and turning ideas into reality through code. Always curious, always learning!
-                        </p>
+                        <p className="text-gray-600 mb-4">{aboutMeParagraph}</p>
                         {/* <p className="text-gray-600">
                         </p> */}
                     </div>
@@ -163,7 +158,7 @@ const Home = () => {
             {/* Footer */}
             <footer className="bg-gray-800 text-white py-8">
                 <div className="container mx-auto px-4 text-center">
-                    <p>&copy; 2025 {username}. All rights reserved.</p>
+                    <p>&copy; 2025 {username}. All right s reserved.</p>
                 </div>
             </footer>
         </div>
