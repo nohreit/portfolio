@@ -7,7 +7,7 @@ const linkedin: string = "https://www.linkedin.com/in/thiernobah07";
 const email: string = "hierno.mah@gmail.com";
 // const phone: string = "+1(917) 370-9485";
 const picture: string | undefined = "/ThiernoBah.jpg?height=150&width=150";
-const resume_link = "https://drive.google.com/file/d/1Lk7p8vKqIX9vz57f-PURNxAFFiGUQz_d/view?usp=sharing";
+const resume_link = "https://docs.google.com/document/d/1b8D4KnOnR7wgz8sIx69_k5mPHTj1dJ3ENcXemysFctk/edit?usp=sharing";
 
 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
     <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
