@@ -1,7 +1,18 @@
 import Image from "next/image"
 import ProjectCard from "@/components/project-card";
 
-const username = "Thierno Bah";
+const username: string = "Thierno Bah";
+const github: string = "https://github.com/nohreit";
+const linkedin: string = "https://www.linkedin.com/in/thiernobah07";
+const email: string = "hierno.mah@gmail.com";
+// const phone: string = "+1(917) 370-9485";
+const picture: string | undefined = undefined;
+const resume_link = "https://drive.google.com/file/d/1Lk7p8vKqIX9vz57f-PURNxAFFiGUQz_d/view?usp=sharing";
+
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+    <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+</svg>
+
 
 const Mail = () => {
     return (<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" className="bi bi-envelope" viewBox="0 0 16 16">
@@ -23,7 +34,7 @@ const Linkedin = () => {
 
 const Home = () => {
     return (
-        <div className="container mx-auto min-h-screen bg-gray-100">
+        <div className="mx-auto min-h-screen bg-gray-100">
             {/* Header */}
             <header className="bg-white shadow-sm">
                 <div className="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -50,11 +61,11 @@ const Home = () => {
                 </div>
             </header>
 
-            {/* Hero Section */}
+            {/* Profile Section */}
             <section className="bg-gray-800 text-white py-20">
                 <div className="container mx-auto px-4 text-center">
                     <Image
-                        src="/placeholder.svg?height=150&width=150"
+                        src={picture || "/placeholder.svg?height=150&width=150"}
                         alt={`${username}_picture`}
                         width={150}
                         height={150}
@@ -64,7 +75,7 @@ const Home = () => {
                     <p className="text-xl mb-8">Full Stack Developer</p>
                     <div className="flex justify-center space-x-4">
                         <a
-                            href="#"
+                            href={resume_link}
                             className="bg-white text-gray-800 px-4 py-2 rounded-full hover:bg-gray-200 transition duration-300"
                         >
                             Download CV
@@ -82,7 +93,7 @@ const Home = () => {
             {/* About Section */}
             <section id="about" className="py-20">
                 <div className="container mx-auto px-4">
-                    <h2 className="text-3xl font-bold mb-8 text-center">About Me</h2>
+                    <h2 className="text-3xl font-bold mb-8 text-center text-gray-700">About Me</h2>
                     <div className="max-w-3xl mx-auto text-center">
                         <p className="text-gray-600 mb-4">
                             I'm a passionate full stack developer with 5 years of experience in building web applications. I
@@ -100,7 +111,7 @@ const Home = () => {
             {/* Projects Section */}
             <section id="projects" className="bg-gray-200 py-20">
                 <div className="container mx-auto px-4">
-                    <h2 className="text-3xl font-bold mb-8 text-center">My Projects</h2>
+                    <h2 className="text-3xl font-bold mb-8 text-center text-gray-700">My Projects</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <ProjectCard
                             title="E-commerce Platform"
@@ -127,16 +138,16 @@ const Home = () => {
             {/* Contact Section */}
             <section id="contact" className="py-20">
                 <div className="container mx-auto px-4">
-                    <h2 className="text-3xl font-bold mb-8 text-center">Get In Touch</h2>
+                    <h2 className="text-3xl font-bold mb-8 text-center text-gray-700">Get In Touch</h2>
                     <div className="flex justify-center space-x-6">
                         <div className="grid grid-cols-3 gap-x-8 gap-y-8">
-                            <a href="mailto:hierno.mah@gmail.com.com" className="text-gray-600 hover:text-gray-800">
+                            <a href={`mailto:${email}`} className="text-gray-600 hover:text-gray-800" title={email}>
                                 <Mail />
                             </a>
-                            <a href="https://github.com/johndoe" className="text-gray-600 hover:text-gray-800">
+                            <a href={github} target="_blank" className="text-gray-600 hover:text-gray-800">
                                 <Github />
                             </a>
-                            <a href="https://linkedin.com/in/johndoe" className="text-gray-600 hover:text-gray-800">
+                            <a href={linkedin} className="text-gray-600 hover:text-gray-800">
                                 <Linkedin />
                             </a>
                         </div>
@@ -147,7 +158,7 @@ const Home = () => {
             {/* Footer */}
             <footer className="bg-gray-800 text-white py-8">
                 <div className="container mx-auto px-4 text-center">
-                    <p>&copy; 2023 {username}. All rights reserved.</p>
+                    <p>&copy; 2025 {username}. All rights reserved.</p>
                 </div>
             </footer>
         </div>
